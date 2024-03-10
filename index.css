@@ -1,0 +1,162 @@
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: "Helvetica", sans-serif;
+}
+
+.w3-row-padding img {
+  margin-bottom: 12px;
+}
+
+.bgimg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('lei.jpg'); /* Replace 'lei.jpg' with your actual image file name */
+  min-height: 100%;
+  background-color: #ffffff; /* Change background color to dirty white */
+  box-shadow: 10px 0 15px rgba(0, 0, 0, 0.3); /* Add shadow to the right side */
+  transition: transform 0.3s ease; /* Adding a smooth transition effect */
+}
+
+/* Hover effect */
+.bgimg:hover {
+  transform: scale(1.1); /* Increase the size of the image on hover */
+}
+
+/* Hide scrollbar for Chrome, Safari, and Opera */
+::-webkit-scrollbar {
+   display: none;
+} 
+
+/* Make lines darker */
+hr {
+  border-color: #333; /* Change border color to a darker shade */
+}
+
+/* Make text darker */
+body, p {
+  color: #000000; /* Change text color to a darker shade */
+}
+
+/* Make button text darker */
+.w3-button {
+  color: #333 !important;
+}
+
+/* Add hover effect to text */
+.w3-jumbo {
+  transition: color 0.3s, transform 0.3s; /* Smooth transition effect for color and transform */
+}
+
+/* Move text upward on hover */
+.w3-jumbo:hover {
+  color: rgb(73, 63, 7); /* Change the color to your desired hover color */
+  transform: translateY(-5px); /* Move the text upward */
+}
+
+/* Add underline effect when focused */
+.w3-jumbo:focus {
+  text-decoration: underline;
+  outline: none; /* Remove the default focus outline */
+}
+
+
+.logo-section {
+  display: flex;
+  justify-content: center;
+}
+
+.logo-section img {
+  max-width: 300px; /* Adjust the value as needed */
+  height: auto;
+  border-radius: 10px;
+  content: var(--image-url);
+  transition: transform 0.3s ease-in-out; /* Smooth transition for the transform property */
+}
+
+.logo-section img:hover {
+  transform: scale(1.1); /* Scale the image up by 10% on hover */
+}
+
+/* Form style */
+.container {
+  width: 300px;
+  margin: auto;
+}
+
+/* Form group style */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Label style */
+label {
+  display: block;
+  font-weight: bold;
+}
+
+/* Input style */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Button style */
+.btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #2c2c2c;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Button hover effect */
+.btn:hover {
+  background-color: #000000;
+}
+
+/* Link style */
+a {
+  color: #4e4e4e;
+  text-decoration: none;
+}
+
+/* Link hover effect */
+a:hover {
+  text-decoration: underline;
+}
+
+/* Gallery Section */
+.gallery-section {
+  margin-top: 50px; /* Adjust spacing from the previous section */
+}
+
+.gallery-title {
+  font-size: 50px; /* Adjust font size of the title */
+  color: #333; /* Set color of the title */
+  margin-bottom: 20px; /* Add some space below the title */
+}
+
+.gallery {
+  display: flex; /* Use flexbox for image alignment */
+  justify-content: center; /* Center images horizontally */
+  flex-wrap: wrap; /* Allow images to wrap to the next line if needed */
+}
+
+.gallery img {
+  width: 600px; /* Set width of each image */
+  height: auto; /* Maintain aspect ratio */
+  margin: 20px 10px; /* Add spacing between images and margin at the top */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Style for individual images */
+.gallery img:hover {
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transform: scale(1.1); /* Scale up the image on hover */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add drop shadow effect */
+}

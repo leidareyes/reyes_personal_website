@@ -1,0 +1,99 @@
+body {
+    font-family: 'Helvetica', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url('https://images.hdqwalls.com/wallpapers/white-cube-pattern-4k-bu.jpg'); /* Background image */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
+    position: relative; /* Position relative for absolute positioning of the moving background */
+}
+
+.logo-section {
+    margin-top: -40vh; /* Adjust the top margin to position the logo */
+    transition: transform 0.3s ease; /* Add transition for smooth animation */
+}
+
+.logo-section:hover {
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+.logo-section img {
+    max-width: 900px; /* Adjust the maximum width of the logo */
+}
+
+
+.white-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5); /* White background with transparency */
+    animation: moveBackground 30s linear infinite; /* Animation properties */
+}
+
+@keyframes moveBackground {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.container {
+    width: 50%;
+    max-width: 1000px; /* Limit container width */
+    padding: 20px;
+    background-color: #f0f0f0; /* Light gray background */
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    margin: 60px; /* Space from the edges */
+    transition: transform 0.3s ease; /* Add transition for smooth animation */
+}
+
+.container h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    width: 100%;
+    height: 40px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.btn-primary {
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    background-color: #000000;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #525252;
+}
+
+ .back-button {
+            position: top;
+            top: 1px; /* Adjust as needed */
+            left: 1px; /* Adjust as needed */
+        }
